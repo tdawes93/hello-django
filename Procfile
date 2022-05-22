@@ -1,1 +1,1 @@
-web: gunicorn django_todo.wsgi:application
+web: gunicorn --bind 0.0.0.0:$PORT django_todo.wsgi:application
